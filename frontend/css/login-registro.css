@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/frontend/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/frontend/assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.login-contenedor {
+    background-color: #111827;
+    width: 480px;
+    height: 520px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    padding: 40px 20px;
+}
+
+.login-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #A67C00;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.login-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.login-form input {
+    background-color:#1A2035;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.login-form button {
+    width: 200px;
+    height: 48px;
+    background-color: #A67C00;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    align-self: center;
+}
+
+.login-form button:hover {
+    background-color: #8B5E00;
+}
+
+.pregunta {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.pregunta a {
+    text-decoration: none;
+    color: #A67C00;
+    cursor: pointer;
+}
+
+.pregunta a:hover {
+    color: #8B5E00;
+}

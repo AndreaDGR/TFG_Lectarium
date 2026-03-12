@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lectarium - Registrarse</title>
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="/frontend/css/login-registro.css">
 </head>
 <body>
-    
+    <div id="header"></div>
+    <main class="main-content">
+        <div class="login-contenedor">
+            <h2 class="login-logo">Lectarium</h2>
+            <h3 class="login-titulo">Crear cuenta</h3>
+            <form class="login-form">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+
+        <p class="pregunta">¿Ya tienes cuenta? <a href="/frontend/pages/login.html">Inicia sesión</a></p>
+
+    </main>
+    <div id="footer"></div>
+    <script src="/frontend/js/componentes.js"></script>
 </body>
 </html>
