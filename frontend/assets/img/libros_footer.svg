@@ -1,0 +1,186 @@
+<svg width="100%" viewBox="0 0 800 195" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    .bk { fill:none; stroke:#A67C00; stroke-width:1.4; }
+    .bd { stroke:#A67C00; stroke-width:0.8; }
+    .tt { font-family: serif; font-size: 6px; fill: #A67C00; letter-spacing: 0.4px; }
+  </style>
+</defs>
+
+<!-- B1 w=28 h=162 — con bandas -->
+<rect class="bk" x="10" y="18" width="28" height="162" rx="2"/>
+<line class="bd" x1="10" y1="33" x2="38" y2="33"/>
+<line class="bd" x1="10" y1="40" x2="38" y2="40"/>
+<line class="bd" x1="10" y1="165" x2="38" y2="165"/>
+<line class="bd" x1="10" y1="172" x2="38" y2="172"/>
+<text class="tt" transform="translate(24,102) rotate(-90)" text-anchor="middle">DON QUIJOTE DE LA MANCHA</text>
+
+<!-- B2 w=22 h=118 — sin bandas -->
+<rect class="bk" x="40" y="62" width="22" height="118" rx="2"/>
+<text class="tt" transform="translate(51,121) rotate(-90)" text-anchor="middle">CIEN AÑOS DE SOLEDAD</text>
+
+<!-- B3 w=30 h=167 — con bandas -->
+<rect class="bk" x="64" y="14" width="30" height="167" rx="2"/>
+<line class="bd" x1="64" y1="28" x2="94" y2="28"/>
+<line class="bd" x1="64" y1="35" x2="94" y2="35"/>
+<line class="bd" x1="64" y1="168" x2="94" y2="168"/>
+<line class="bd" x1="64" y1="175" x2="94" y2="175"/>
+<text class="tt" transform="translate(79,101) rotate(-90)" text-anchor="middle">CRIMEN Y CASTIGO</text>
+
+<!-- B4 w=18 h=100 — sin bandas -->
+<rect class="bk" x="96" y="80" width="18" height="100" rx="2"/>
+<text class="tt" transform="translate(105,130) rotate(-90)" text-anchor="middle">EL EXTRANJERO</text>
+
+<!-- B5 w=26 h=147 — con bandas -->
+<rect class="bk" x="116" y="34" width="26" height="147" rx="2"/>
+<line class="bd" x1="116" y1="47" x2="142" y2="47"/>
+<line class="bd" x1="116" y1="54" x2="142" y2="54"/>
+<line class="bd" x1="116" y1="169" x2="142" y2="169"/>
+<line class="bd" x1="116" y1="176" x2="142" y2="176"/>
+<text class="tt" transform="translate(129,111) rotate(-90)" text-anchor="middle">LOS HERMANOS KARAMÁZOV</text>
+
+<!-- B6 w=20 h=107 — sin bandas -->
+<rect class="bk" x="144" y="74" width="20" height="107" rx="2"/>
+<text class="tt" transform="translate(154,127) rotate(-90)" text-anchor="middle">MADAME BOVARY</text>
+
+<!-- B7 w=34 h=171 — con bandas -->
+<rect class="bk" x="166" y="10" width="34" height="171" rx="2"/>
+<line class="bd" x1="166" y1="24" x2="200" y2="24"/>
+<line class="bd" x1="166" y1="31" x2="200" y2="31"/>
+<line class="bd" x1="166" y1="168" x2="200" y2="168"/>
+<line class="bd" x1="166" y1="175" x2="200" y2="175"/>
+<text class="tt" transform="translate(183,99) rotate(-90)" text-anchor="middle">EN BUSCA DEL TIEMPO PERDIDO</text>
+
+<!-- B8 w=24 h=131 — sin bandas -->
+<rect class="bk" x="202" y="50" width="24" height="131" rx="2"/>
+<text class="tt" transform="translate(214,115) rotate(-90)" text-anchor="middle">GUERRA Y PAZ</text>
+
+<!-- B9 w=16 h=97 — sin bandas -->
+<rect class="bk" x="228" y="84" width="16" height="97" rx="2"/>
+<text class="tt" transform="translate(236,132) rotate(-90)" text-anchor="middle">EL PROCESO</text>
+
+<!-- B10 w=28 h=153 — con bandas -->
+<rect class="bk" x="246" y="28" width="28" height="153" rx="2"/>
+<line class="bd" x1="246" y1="42" x2="274" y2="42"/>
+<line class="bd" x1="246" y1="49" x2="274" y2="49"/>
+<line class="bd" x1="246" y1="168" x2="274" y2="168"/>
+<line class="bd" x1="246" y1="175" x2="274" y2="175"/>
+<text class="tt" transform="translate(260,108) rotate(-90)" text-anchor="middle">ULISES</text>
+
+<!-- B11 w=20 h=117 — sin bandas -->
+<rect class="bk" x="276" y="64" width="20" height="117" rx="2"/>
+<text class="tt" transform="translate(286,122) rotate(-90)" text-anchor="middle">LOLITA</text>
+
+<!-- B12 w=32 h=165 — con bandas -->
+<rect class="bk" x="298" y="16" width="32" height="165" rx="2"/>
+<line class="bd" x1="298" y1="30" x2="330" y2="30"/>
+<line class="bd" x1="298" y1="37" x2="330" y2="37"/>
+<line class="bd" x1="298" y1="168" x2="330" y2="168"/>
+<line class="bd" x1="298" y1="175" x2="330" y2="175"/>
+<text class="tt" transform="translate(314,102) rotate(-90)" text-anchor="middle">EL MAESTRO Y MARGARITA</text>
+
+<!-- B13 w=18 h=93 — sin bandas -->
+<rect class="bk" x="332" y="88" width="18" height="93" rx="2"/>
+<text class="tt" transform="translate(341,134) rotate(-90)" text-anchor="middle">LA METAMORFOSIS</text>
+
+<!-- B14 w=24 h=137 — con bandas -->
+<rect class="bk" x="352" y="44" width="24" height="137" rx="2"/>
+<line class="bd" x1="352" y1="57" x2="376" y2="57"/>
+<line class="bd" x1="352" y1="64" x2="376" y2="64"/>
+<line class="bd" x1="352" y1="169" x2="376" y2="169"/>
+<line class="bd" x1="352" y1="176" x2="376" y2="176"/>
+<text class="tt" transform="translate(364,115) rotate(-90)" text-anchor="middle">ANNA KARENINA</text>
+
+<!-- B15 w=36 h=171 — con bandas -->
+<rect class="bk" x="378" y="10" width="36" height="171" rx="2"/>
+<line class="bd" x1="378" y1="24" x2="414" y2="24"/>
+<line class="bd" x1="378" y1="31" x2="414" y2="31"/>
+<line class="bd" x1="378" y1="168" x2="414" y2="168"/>
+<line class="bd" x1="378" y1="175" x2="414" y2="175"/>
+<text class="tt" transform="translate(396,99) rotate(-90)" text-anchor="middle">EL NOMBRE DE LA ROSA</text>
+
+<!-- B16 w=18 h=103 — sin bandas -->
+<rect class="bk" x="416" y="78" width="18" height="103" rx="2"/>
+<text class="tt" transform="translate(425,129) rotate(-90)" text-anchor="middle">SIDDHARTHA</text>
+
+<!-- B17 w=26 h=155 — sin bandas -->
+<rect class="bk" x="436" y="26" width="26" height="155" rx="2"/>
+<text class="tt" transform="translate(449,103) rotate(-90)" text-anchor="middle">LOS MISERABLES</text>
+
+<!-- B18 w=20 h=113 — con bandas -->
+<rect class="bk" x="464" y="68" width="20" height="113" rx="2"/>
+<line class="bd" x1="464" y1="81" x2="484" y2="81"/>
+<line class="bd" x1="464" y1="88" x2="484" y2="88"/>
+<line class="bd" x1="464" y1="169" x2="484" y2="169"/>
+<line class="bd" x1="464" y1="176" x2="484" y2="176"/>
+<text class="tt" transform="translate(474,128) rotate(-90)" text-anchor="middle">FICCIONES</text>
+
+<!-- B19 w=30 h=167 — sin bandas -->
+<rect class="bk" x="486" y="14" width="30" height="167" rx="2"/>
+<text class="tt" transform="translate(501,97) rotate(-90)" text-anchor="middle">MIL NOVECIENTAS OCHENTA Y CUATRO</text>
+
+<!-- B20 w=16 h=95 — sin bandas -->
+<rect class="bk" x="518" y="86" width="16" height="95" rx="2"/>
+<text class="tt" transform="translate(526,133) rotate(-90)" text-anchor="middle">EL HOBBIT</text>
+
+<!-- B21 w=24 h=135 — con bandas -->
+<rect class="bk" x="536" y="46" width="24" height="135" rx="2"/>
+<line class="bd" x1="536" y1="59" x2="560" y2="59"/>
+<line class="bd" x1="536" y1="66" x2="560" y2="66"/>
+<line class="bd" x1="536" y1="169" x2="560" y2="169"/>
+<line class="bd" x1="536" y1="176" x2="560" y2="176"/>
+<text class="tt" transform="translate(548,116) rotate(-90)" text-anchor="middle">MOBY DICK</text>
+
+<!-- B22 w=32 h=163 — sin bandas -->
+<rect class="bk" x="562" y="18" width="32" height="163" rx="2"/>
+<text class="tt" transform="translate(578,99) rotate(-90)" text-anchor="middle">ORGULLO Y PREJUICIO</text>
+
+<!-- B23 w=18 h=109 — con bandas -->
+<rect class="bk" x="596" y="72" width="18" height="109" rx="2"/>
+<line class="bd" x1="596" y1="85" x2="614" y2="85"/>
+<line class="bd" x1="596" y1="92" x2="614" y2="92"/>
+<line class="bd" x1="596" y1="169" x2="614" y2="169"/>
+<line class="bd" x1="596" y1="176" x2="614" y2="176"/>
+<text class="tt" transform="translate(605,129) rotate(-90)" text-anchor="middle">EL GRAN GATSBY</text>
+
+<!-- B24 w=28 h=151 — sin bandas -->
+<rect class="bk" x="616" y="30" width="28" height="151" rx="2"/>
+<text class="tt" transform="translate(630,105) rotate(-90)" text-anchor="middle">RAYUELA</text>
+
+<!-- B25 w=22 h=115 — con bandas -->
+<rect class="bk" x="646" y="66" width="22" height="115" rx="2"/>
+<line class="bd" x1="646" y1="79" x2="668" y2="79"/>
+<line class="bd" x1="646" y1="86" x2="668" y2="86"/>
+<line class="bd" x1="646" y1="169" x2="668" y2="169"/>
+<line class="bd" x1="646" y1="176" x2="668" y2="176"/>
+<text class="tt" transform="translate(657,126) rotate(-90)" text-anchor="middle">LA CASA DE LOS ESPÍRITUS</text>
+
+<!-- B26 w=30 h=169 — sin bandas -->
+<rect class="bk" x="670" y="12" width="30" height="169" rx="2"/>
+<text class="tt" transform="translate(685,96) rotate(-90)" text-anchor="middle">PEDRO PÁRAMO</text>
+
+<!-- B27 w=18 h=101 — con bandas -->
+<rect class="bk" x="702" y="80" width="18" height="101" rx="2"/>
+<line class="bd" x1="702" y1="93" x2="720" y2="93"/>
+<line class="bd" x1="702" y1="100" x2="720" y2="100"/>
+<line class="bd" x1="702" y1="169" x2="720" y2="169"/>
+<line class="bd" x1="702" y1="176" x2="720" y2="176"/>
+<text class="tt" transform="translate(711,133) rotate(-90)" text-anchor="middle">EL TÚNEL</text>
+
+<!-- B28 w=26 h=141 — sin bandas -->
+<rect class="bk" x="722" y="40" width="26" height="141" rx="2"/>
+<text class="tt" transform="translate(735,110) rotate(-90)" text-anchor="middle">BELOVED</text>
+
+<!-- B29 w=20 h=111 — con bandas -->
+<rect class="bk" x="750" y="70" width="20" height="111" rx="2"/>
+<line class="bd" x1="750" y1="83" x2="770" y2="83"/>
+<line class="bd" x1="750" y1="90" x2="770" y2="90"/>
+<line class="bd" x1="750" y1="169" x2="770" y2="169"/>
+<line class="bd" x1="750" y1="176" x2="770" y2="176"/>
+<text class="tt" transform="translate(760,128) rotate(-90)" text-anchor="middle">LAS UVAS DE LA IRA</text>
+
+<!-- B30 w=26 h=161 — sin bandas -->
+<rect class="bk" x="772" y="20" width="26" height="161" rx="2"/>
+<text class="tt" transform="translate(785,100) rotate(-90)" text-anchor="middle">EL SONIDO Y LA FURIA</text>
+
+</svg>

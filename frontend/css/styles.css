@@ -136,6 +136,11 @@ header {
     margin-top: 10px;
 }
 
+.imagen-footer {
+    width: 500px;
+    height: auto;
+}
+
 .nav-contacto {
     display: flex;
     gap: 60px;
