@@ -4,8 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lectarium - Catálogo</title>
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="/frontend/css/catalogo.css">
+
 </head>
 <body>
-    
+    <div id="header"></div>
+    <main class="main-content">
+
+        <section class="buscador">
+            <input type="text" id="input-buscador" placeholder="Buscar por título, autor o género..." />
+            <button class="btn-buscar">Buscar</button>
+        </section>
+
+        <div class="linea-separacion"></div>
+
+        <section class="contenido-libros">
+            <select class="filtro">
+                <option value="todos">Todos los libros</option>
+                <option value="disponibles">Solo disponibles</option>
+            </select>
+
+            <div class="grid-libros">
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img class="img-portada" src="/frontend/assets/img/dune_portada.webp" alt="Portada Dune" />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-libro">
+                    <div class="tarjeta-portada">
+                        <img />
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3 class="tarjeta-titulo">Título</h3>
+                        <p class="tarjeta-autor">Autor</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paginacion">
+                <button class="btn-pagina" id="btn-anterior">&#8592</button>
+                <button class="btn-pagina activo">1</button>
+                <button class="btn-pagina">2</button>
+                <button class="btn-pagina">3</button>
+                <button class="btn-pagina">4</button>
+                <button class="btn-pagina">5</button>
+                <button class="btn-pagina" id="btn-siguiente">&#8594</button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div id="footer"></div>
+    <script src="/frontend/js/componentes.js"></script>
 </body>
 </html>

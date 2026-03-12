@@ -29,6 +29,7 @@ body {
 
 main {
     flex: 1;
+    margin: 30px 100px 30px 100px;
 }
 
 /* Header */
