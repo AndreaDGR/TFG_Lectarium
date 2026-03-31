@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lectarium</title>
+    <title>Lectarium - Ficha de libro</title>
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="/frontend/css/ficha-libro.css">
 </head>
+
 <body>
-    
+    <div id="header"></div>
+    <main class="main-content">
+
+        <section class="ficha-contenedor">
+            <div class="ficha-portada">
+                <img id="portada" src="" alt="Portada del libro"
+                    onerror="this.src='/frontend/assets/img/portada-default.webp'" />
+                <button class="btn-prestamo" id="btn-prestamo">Solicitar préstamo</button>
+                <button class="btn-favorito" id="btn-favorito">Añadir a favoritos</button>
+            </div>
+
+            <div class="ficha-info">
+                <h1 class="ficha-titulo" id="titulo"></h1>
+                <p class="ficha-autor" id="autor"></p>
+                <p class="ficha-genero" id="genero"></p>
+                <p class="ficha-anio" id="anio"></p>
+                <div class="linea-separacion"></div>
+                <p class="ficha-disponibilidad" id="disponibilidad"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+    <script src="/frontend/js/componentes.js"></script>
+    <script src="/frontend/js/ficha-libro.js"></script>
 </body>
+
 </html>

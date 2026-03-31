@@ -15,6 +15,7 @@ const registro = (req, res) => {
 
         conexion.query(consulta, [nombre, email, hash], (err, result) => {
             if (err) {
+                console.error('Error al registrar:', err);
                 return res.status(500).json({ mensaje: 'Error al registrar usuario'});
             }
             res.status(201).json({ mensaje: 'Usuario registrado correctamente'});

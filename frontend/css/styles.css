@@ -189,5 +189,13 @@ header {
 }
 
 
+/* ---------  RESPONSIVE --------- */
+
+@media (max-width: 580px) {
+    main {
+        margin: 15px 20px;
+    }
+}
+
 
 
