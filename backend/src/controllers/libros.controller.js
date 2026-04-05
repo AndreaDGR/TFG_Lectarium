@@ -68,4 +68,26 @@ const obtenerDestacados = (req, res) => {
     });
 };
 
-module.exports = { obtenerLibros, obtenerLibro, buscarLibros, obtenerDestacados };
+
+// Obtener novedades
+
+const obtenerNovedades = (req, res) => {
+    const consulta = `
+        SELECT libros.*, genero.nombre AS genero
+        FROM libros libros
+        JOIN generos genero ON libros.id_genero = genero.id_genero
+        ORDER BY libros.id_libro DESC
+        LIMIT 10
+    `;
+
+    conexion.query(consulta, (error, resultados) => {
+        if (error) {
+            console.error('Error al obtener novedades:', error);
+            return res.status(500).json({ mensaje: 'Error al obtener las novedades' });
+        }
+        res.json(resultados);
+    });
+};
+
+
+module.exports = {obtenerLibros, obtenerLibro, buscarLibros, obtenerDestacados, obtenerNovedades};
