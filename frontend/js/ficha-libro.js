@@ -13,6 +13,7 @@ async function cargarLibro() {
         document.getElementById('autor').textContent = libro[0].autor;
         document.getElementById('genero').textContent = `Género: ${libro[0].genero}`;
         document.getElementById('anio').textContent = `Año de publicación: ${libro[0].anio_publicacion}`;
+        document.getElementById('sinopsis').innerHTML = libro[0].sinopsis || 'Sinopsis no disponible';
         document.title = `Lectarium - ${libro[0].titulo}`;
 
         const disponibilidad = document.getElementById('disponibilidad');
