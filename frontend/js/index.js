@@ -32,7 +32,7 @@ async function cargarDestacados() {
 // Novedades
 async function cargarNovedades() {
     try {
-        const respuesta = await fetch('http://localhost:3000/api/libros');
+        const respuesta = await fetch('http://localhost:3000/api/libros/novedades');
         const libros = await respuesta.json();
 
         const carrusel = document.getElementById('carrusel-novedades');
@@ -58,5 +58,26 @@ async function cargarNovedades() {
     }
 }
 
-cargarDestacados();
-cargarNovedades();
+//Deslizamiento de carruseles
+function desplazarCarrusel() {
+    const carruseles = document.querySelectorAll('.carrusel-contenedor');
+    
+    carruseles.forEach(contenedor => {
+        const carrusel = contenedor.querySelector('.carrusel');
+        const btnIzq = contenedor.querySelector('.flecha.izq');
+        const btnDcha = contenedor.querySelector('.flecha.dcha');
+        
+
+        const desplazamiento = 240;
+
+        btnDcha.addEventListener('click', () => {
+            carrusel.scrollBy({ left: desplazamiento, behavior: 'smooth' });
+        });
+        btnIzq.addEventListener('click', () => {
+            carrusel.scrollBy({ left: -desplazamiento, behavior: 'smooth' });
+        });
+    });
+}
+
+Promise.all([cargarDestacados(), cargarNovedades()])
+    .then(() => desplazarCarrusel());

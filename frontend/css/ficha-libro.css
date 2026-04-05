@@ -96,3 +96,23 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+.ficha-sinopsis {
+    margin-top: 20px;
+}
+
+.sinopsis-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.ficha-sinopsis .sinopsis-contenido {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color:#8892A4;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 75%;
+}

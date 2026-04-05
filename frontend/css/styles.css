@@ -92,7 +92,13 @@ header {
     background-color: transparent;
 }
 
-.btn-login:hover {
+.btn-perfil {
+    display: none !important;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.btn-login:hover, .btn-perfil:hover {
     color: #A67C00;
 }
 
@@ -190,6 +196,57 @@ header {
 
 
 /* ---------  RESPONSIVE --------- */
+
+@media (max-width: 1024px) {
+    /*Footer*/
+    .footer {
+        padding: 20px 25px;
+    }
+
+    .footer-contenido {
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .logo-slogan {
+        margin-left: 0;
+    }
+
+    .imagen-footer {
+        width: 300px;
+    }
+
+    .nav-contacto {
+        margin-right: 0;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 15px 50px;
+    }
+
+    /*Footer*/
+    .footer-contenido {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .logo-slogan {
+        margin-left: 0;
+    }
+
+    .imagen-footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-contacto {
+        margin-right: 0;
+    }
+}
 
 @media (max-width: 580px) {
     main {

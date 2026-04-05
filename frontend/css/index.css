@@ -211,6 +211,49 @@ main {
 
 /* ---------  RESPONSIVE --------- */
 
+@media (max-width: 1024px) {
+    .intro {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .intro-texto .intro-titulo {
+        font-size: 48px;
+    }
+
+    .intro-texto .intro-subtitulo {
+        font-size: 16px;
+    }
+
+    .intro-texto .intro-btn {
+        font-size: 16px;
+        padding: 12px 22px;
+    }
+
+    .intro-img img {
+        max-width: 100%;
+    }
+
+    .separacion {
+        margin: 75px 0 40px 0;
+    }
+
+    .destacados-carrusel,
+    .novedades-carrusel {
+        gap: 30px;
+    }
+
+    .destacados-titulo,
+    .novedades-titulo {
+        font-size: 28px;
+        max-width: 200px;
+    }
+
+    .novedades-titulo {
+        max-width: 130px;
+    }
+}
+
 @media (max-width: 768px) {
     .intro {
         flex-direction: column;
@@ -238,6 +281,11 @@ main {
         margin: 50px 0 25px 0;
     }
 
+    .destacados-carrusel,
+    .novedades-carrusel {
+        gap: 25px;
+    }
+
     .destacados-titulo,
     .novedades-titulo {
         font-size: 24px;
@@ -247,7 +295,6 @@ main {
     .novedades-titulo {
         max-width: 110px;
     }
-
 
 }
 

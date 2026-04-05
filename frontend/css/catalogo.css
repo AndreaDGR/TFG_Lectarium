@@ -155,3 +155,7 @@
     font-size: 20px;
     cursor: pointer;
 }
+
+.btn-pagina.activo {
+    color:#A67C00;
+}
