@@ -81,3 +81,4 @@ function desplazarCarrusel() {
 
 Promise.all([cargarDestacados(), cargarNovedades()])
     .then(() => desplazarCarrusel());
+

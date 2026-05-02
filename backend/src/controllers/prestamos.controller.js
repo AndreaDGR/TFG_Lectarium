@@ -43,24 +43,27 @@ const solicitarPrestamo = (req, res) => {
     });
 };
 
-//Ver préstamos activos del usuario
-const prestamosActivos = (req, res) => {
+//Ver historial de préstamos del usuario
+const historialPrestamos = (req, res) => {
     const id_usuario = req.usuario.id;
 
     const consulta = `
-    SELECT prestamos.*, libros.titulo, libros.autor, genero.nombre AS genero
+    SELECT prestamos.*, libros.titulo, libros.autor, genero.nombre AS genero,
+    IF (prestamos.fecha_fin < NOW(), 'vencido', 'activo') AS estado
     FROM prestamos prestamos
     JOIN libros libros ON prestamos.id_libro = libros.id_libro
     JOIN generos genero ON libros.id_genero = genero.id_genero
-    WHERE prestamos.id_usuario = ? AND prestamos.estado = 'activo'
+    WHERE prestamos.id_usuario = ?
+    ORDER BY prestamos.fecha_inicio DESC
     `;
 
     conexion.query(consulta, [id_usuario], (error, resultados) => {
         if (error) {
-            return res.status(500).json({mensaje: 'Se ha producido un error al obtener los préstamos activos'});
+            console.error('Error al obtener el historial de préstamos:', error);
+            return res.status(500).json({mensaje: 'Se ha producido un error al obtener el historial de préstamos'});
         }
         res.json(resultados);
     });
 }; 
 
-module.exports = {solicitarPrestamo, prestamosActivos};
+module.exports = {solicitarPrestamo, historialPrestamos};

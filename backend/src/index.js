@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const conexion = require('./config/db');
 const authRoutes = require('./routes/auth.routes');
@@ -16,6 +18,32 @@ app.use('/api/libros', librosRoutes);
 app.use('/api/prestamos', prestamosRoutes);
 app.use('/api/favoritos', favoritosRoutes);
 
+//Actualización de disponibilidad de libros
+
+const actualizarDisponibilidad = () => {
+
+    const consulta = `
+    UPDATE libros
+    SET disponibilidad = 1
+    WHERE id_libro IN (
+        SELECT id_libro
+        FROM prestamos
+        WHERE fecha_fin < NOW()
+    )
+    `;
+    
+    conexion.query(consulta, (error) => {
+        if (error) {
+            console.error('Error al actualizar disponibilidad:', error);
+        } else {
+            console.log('Disponibilidad de libros actualizada');
+        };
+    });
+};
+
 app.listen(process.env.PORT, () => {
     console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
+    actualizarDisponibilidad();
+    setInterval(actualizarDisponibilidad, 60 * 60 * 1000);
 });
+
