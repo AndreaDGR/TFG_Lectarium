@@ -13,13 +13,13 @@ document.querySelectorAll('.menu-item[data-seccion]').forEach(item => {
             s.classList.add('oculto'));
         
         item.classList.add('activo');
-        document.getElementById(`seccion-${item.CDATA_SECTION_NODE.seccion}`).classList.remove('oculto');
+        document.getElementById(`seccion-${item.dataset.seccion}`).classList.remove('oculto');
     });
 });
 
 //Cerrar sesión
 
-document.getElementById('btn-cerrar-sesopm').addEventListener('click', () => {
+document.getElementById('btn-cerrar-sesion').addEventListener('click', () => {
     localStorage.removeItem('token');
     localStorage.removeItem('usuario');
     window.location.href = '/frontend/index.html';
@@ -30,10 +30,9 @@ document.getElementById('btn-cerrar-sesopm').addEventListener('click', () => {
 
 async function cargarPrestamos() {
     try {
-        const respuesta = await fetch('http://localhost:3000/api/prestamos/activos', {
+        const respuesta = await fetch('http://localhost:3000/api/prestamos/historial', {
             headers: {'authorization': token}
         });
-        
         const prestamos = await respuesta.json();
         const lista = document.getElementById('lista-prestamos');
         if(prestamos.length === 0) {
@@ -68,7 +67,7 @@ async function cargarPrestamos() {
 async function cargarFavoritos() {
     try {
         const respuesta = await fetch('http://localhost:3000/api/favoritos', {
-            headers: {'authorization': token}
+            headers: {'authorization':  token}
         });
 
         const favoritos = await respuesta.json();
@@ -81,7 +80,7 @@ async function cargarFavoritos() {
         lista.innerHTML = '';
         favoritos.forEach(f => {
             lista.innerHTML += `
-            <div class="tarjeta-libro" onclick="window.location.href='/frontend/pages/fichaa-libro.html?id=${f.id_libro}'">
+            <div class="tarjeta-libro" onclick="window.location.href='/frontend/pages/ficha-libro.html?id=${f.id_libro}'">
                 <div class="tarjeta-portada">
                     <img class="img-portada" src="${f.portada_url}"
                     onerror="this.src='/frontend/assets/img/portada-default.webp'"/>
@@ -97,3 +96,7 @@ async function cargarFavoritos() {
         console.error('Error al cargar favoritos:', error);
     }
 }
+
+
+cargarPrestamos();
+cargarFavoritos();
