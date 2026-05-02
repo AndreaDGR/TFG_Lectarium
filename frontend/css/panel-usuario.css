@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/frontend/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/frontend/assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.panel-main {
+    display: flex;
+    min-height: 500px;
+}
+
+.panel-sidebar {
+    width: 200px;
+    background-color: #0D1221;
+    padding: 40px 20px;
+    flex-shrink: 0;
+}
+
+.sidebar-titulo {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    color: #A67C00;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    padding: 14px 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #8892A4;
+    font-family: "Inter";
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    margin-bottom: 8px;
+}
+
+.menu-item:hover {
+    background-color: #111827;
+    color: #FFFFFF;
+}
+
+.menu-item.activo {
+    background-color: #111827;
+    color: #FFFFFF;
+}
+
+.cerrar-sesion {
+    color: #E05555 !important;
+    margin-top: 20px;
+}
+
+.panel-contenido {
+    flex: 1;
+    padding: 40px 60px;
+}
+
+.panel-contenido h2 {
+    font-family: "Playfair Display";
+    font-size: 28px;
+    color:#FFFFFF;
+    margin-bottom: 10px;
+}
+
+.linea-dorada {
+    width: 185px;
+    height: 3px;
+    background-color: #A67C00;
+    margin-bottom: 30px;
+}
+
+.oculto {
+    display: none;
+}
+
+.tarjeta-prestamo {
+    background-color: #111827;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prestamo-info h3 {
+    font-family: "Inter";
+    font-size: 16px;
+    color:#FFFFFF;
+    margin-bottom: 4px;
+}
+
+.prestamo-info p {
+    font-size: 13px;
+    color:#8892A4;
+}
+
+.prestamo-fecha {
+    font-family: "Inter";
+    font-size: 13px;
+    color:#8892A4;
+    text-align: right;
+}
+
+.estado-activo {
+    color:#4CAF50;
+    font-weight: 600;
+}
+
+.estado-vencido {
+    color:#8892A4;
+    font-family: "Inter";
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.grid-favoritos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}

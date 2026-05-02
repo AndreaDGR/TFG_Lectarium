@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - Lectarium</title>
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="/frontend/css/panel-usuario.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="panel-main">
+
+        <aside class="panel-sidebar">
+            <h3 class="sidebar-titulo">Mi cuenta</h3>
+            <ul class="sidebar-menu">
+                <li class="menu-item activo" data-seccion="prestamos">Mis préstamos</li>
+                <li class="menu-item" data-seccion="favoritos">Mis favoritos</li>
+                <li class="menu-item" data-seccion="historial">Historial</li>
+                <li class="menu-item cerrar-sesion" id="btn-cerrar-sesion">Cerrar sesión</li>
+            </ul>
+        </aside>
+
+        <section class="panel-contenido">
+            <div class="seccion" id="seccion-prestamos">
+                <h2>Mis préstamos</h2>
+                <div class="linea-dorada"></div>
+                <div id="lista-prestamos"></div>
+            </div>
+
+            <div id="seccion-favoritos" class="seccion oculto">
+                <h2>Mis favoritos</h2>
+                <div class="linea-dorada"></div>
+                <div id="lista-favoritos" class="grid-favoritos"></div>
+            </div>
+
+            <div id="seccion-historial" class="seccion oculto">
+                <h2>Mi historial</h2>
+                <div class="linea-dorada"></div>
+                <div id="lista-historial"></div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/frontend/js/componentes.js"></script>
+    <script src="/frontend/js/panel-usuario.js"></script>
+</body>
+</html>
