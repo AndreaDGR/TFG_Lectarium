@@ -30,7 +30,7 @@ document.getElementById('btn-cerrar-sesion').addEventListener('click', () => {
 
 async function cargarPrestamos() {
     try {
-        const respuesta = await fetch('http://localhost:3000/api/prestamos/historial', {
+        const respuesta = await fetch('${API_URL}/api/prestamos/historial', {
             headers: {'authorization': token}
         });
         const prestamos = await respuesta.json();
@@ -66,7 +66,7 @@ async function cargarPrestamos() {
 
 async function cargarFavoritos() {
     try {
-        const respuesta = await fetch('http://localhost:3000/api/favoritos', {
+        const respuesta = await fetch(`${API_URL}/api/favoritos`, {
             headers: {'authorization':  token}
         });
 

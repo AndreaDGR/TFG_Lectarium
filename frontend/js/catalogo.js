@@ -6,7 +6,7 @@ let librosFiltrados = [];
 // Cargar todos los libros
 async function cargarLibros() {
     try {
-        const respuesta = await fetch('http://localhost:3000/api/libros');
+        const respuesta = await fetch('${API_URL}/api/libros');
         todosLosLibros = await respuesta.json();
         librosFiltrados = todosLosLibros;
         renderizarGrid();
@@ -82,8 +82,8 @@ document.getElementById('btn-buscar').addEventListener('click', async () => {
 
     try {
         let url = query
-            ? `http://localhost:3000/api/libros/buscar?query=${query}`
-            : 'http://localhost:3000/api/libros';
+            ? `${API_URL}/api/libros/buscar?query=${query}`
+            : `${API_URL}/api/libros`;
 
         const respuesta = await fetch(url);
         let libros = await respuesta.json();
