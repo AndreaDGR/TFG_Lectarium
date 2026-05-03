@@ -6,7 +6,7 @@ let librosFiltrados = [];
 // Cargar todos los libros
 async function cargarLibros() {
     try {
-        const respuesta = await fetch('${API_URL}/api/libros');
+        const respuesta = await fetch(`${API_URL}/api/libros`);
         todosLosLibros = await respuesta.json();
         librosFiltrados = todosLosLibros;
         renderizarGrid();

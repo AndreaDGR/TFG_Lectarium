@@ -30,7 +30,7 @@ document.getElementById('btn-cerrar-sesion').addEventListener('click', () => {
 
 async function cargarPrestamos() {
     try {
-        const respuesta = await fetch('${API_URL}/api/prestamos/historial', {
+        const respuesta = await fetch(`${API_URL}/api/prestamos/historial`, {
             headers: {'authorization': token}
         });
         const prestamos = await respuesta.json();

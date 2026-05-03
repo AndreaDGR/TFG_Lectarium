@@ -3,7 +3,7 @@
 // Destacados
 async function cargarDestacados() {
     try {
-        const respuesta = await fetch('${API_URL}/api/libros/destacados');
+        const respuesta = await fetch(`${API_URL}/api/libros/destacados`);
         const libros = await respuesta.json();
 
         const carrusel = document.getElementById('carrusel-destacados');
@@ -32,7 +32,7 @@ async function cargarDestacados() {
 // Novedades
 async function cargarNovedades() {
     try {
-        const respuesta = await fetch('${API_URL}/api/libros/novedades');
+        const respuesta = await fetch(`${API_URL}/api/libros/novedades`);
         const libros = await respuesta.json();
 
         const carrusel = document.getElementById('carrusel-novedades');
