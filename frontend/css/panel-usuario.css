@@ -118,18 +118,50 @@
 
 .estado-activo {
     color:#4CAF50;
-    font-weight: 600;
+    padding: 10px 0;
 }
 
 .estado-vencido {
     color:#E05555;
     font-family: "Inter";
     font-size: 15px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .grid-favoritos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .panel-contenido {
+        padding: 20px 30px;
+    }
+
+    .menu-item {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .tarjeta-prestamo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .prestamo-fecha {
+        text-align: left;
+    }
+
+    .grid-favoritos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .panel-sidebar {
+        width: 150px;
+    }
 }

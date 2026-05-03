@@ -1,10 +1,24 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/frontend/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/frontend/assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .contacto-contenedor {
     max-width: 700px;
     margin: 60px auto;
     padding: 0 20px;
 }
 
-.contacto-titulo {
+.contacto-texto h1 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     color: #FFFFFF;
