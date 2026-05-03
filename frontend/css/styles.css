@@ -216,7 +216,26 @@ header {
 
 /* ---------  RESPONSIVE --------- */
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    /*Header*/
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .botones-header {
+        gap: 10px;
+    }
+
+    .botones-header a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+
     /*Footer*/
     .footer {
         padding: 20px 25px;

@@ -159,3 +159,86 @@
 .btn-pagina.activo {
     color:#A67C00;
 }
+
+/* ---------  RESPONSIVE --------- */
+@media (max-width: 1700px) {
+    .grid-libros {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 40px 80px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .grid-libros {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        padding: 20px 20px;
+    }
+
+    .tarjeta-libro {
+        height: 250px;
+    }
+
+    .tarjeta-info {
+        margin-top: 5px;
+        padding: 8px 8px;
+    }
+
+    .tarjeta-portada {
+        height: 180px;
+    }
+
+    .tarjeta-titulo {
+        font-size: 12px;
+    }
+
+    .tarjeta-autor {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #input-buscador {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 10px;
+    }
+
+    .btn-buscar {
+        width: 80px;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+
+    .linea-separacion {
+        margin: 20px 0;
+    }
+
+    .filtro {
+        height: 40px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .grid-libros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px 20px;
+    }
+
+    .tarjeta-portada {
+        height: 180px;
+    }
+
+    .tarjeta-titulo {
+        font-size: 10px;
+    }
+
+    .tarjeta-autor {
+        font-size: 8px;
+    }
+
+}

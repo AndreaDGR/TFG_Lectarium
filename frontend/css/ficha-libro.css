@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/frontend/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/frontend/assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .ficha-contenedor {
     display: flex;
     gap: 60px;
@@ -132,4 +146,39 @@
     line-height: 1.5;
     text-align: justify;
     max-width: 75%;
+}
+
+@media (max-width: 1700px) {
+    .ficha-contenedor {
+        padding: 40px 30px;
+    }
+
+    .ficha-sinopsis .sinopsis-contenido {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .ficha-contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .ficha-sinopsis .sinopsis-contenido {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ficha-titulo {
+        font-size: 28px;
+    }
+
+    .ficha-autor {
+        font-size: 16px;
+    }
+
+    .ficha-genero, .ficha-anio {
+        font-size: 14px;
+    }
 }
