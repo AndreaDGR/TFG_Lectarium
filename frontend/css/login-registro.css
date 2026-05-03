@@ -96,3 +96,27 @@
 .pregunta a:hover {
     color: #8B5E00;
 }
+
+@media (max-width: 768px) {
+    .login-contenedor {
+        width: 90%;
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .login-logo {
+        font-size: 28px;
+    }
+
+    .login-titulo {
+        font-size: 20px;
+    }
+
+    .login-form {
+        gap: 30px;
+    }
+
+    .login-form button {
+        width: 100%;
+    }
+}
