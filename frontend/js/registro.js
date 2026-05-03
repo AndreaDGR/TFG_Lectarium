@@ -18,7 +18,7 @@ document.querySelector('.login-form').addEventListener('submit', async (e) => {
 
         if (respuesta.ok) {
             alert('Cuenta creada correctamente. Inicia sesión.');
-            window.location.href = '/frontend/pages/login.html';
+            window.location.href = '/pages/login.html';
         } else {
             alert(datos.mensaje);
         }
