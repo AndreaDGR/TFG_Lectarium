@@ -66,4 +66,23 @@ const historialPrestamos = (req, res) => {
     });
 }; 
 
-module.exports = {solicitarPrestamo, historialPrestamos};
+// El usuario puede leer el libro si solicita el préstamo
+const comprobarPrestamo = (req, res) => {
+    const id_usuario = req.usuario.id;
+    const { id_libro } = res.param;
+
+    const consulta = `
+        SELECT * FROM prestamos
+        WHERE id_usuario = ? AND id_libro = ? AND fecha_fin > NOW()
+    `;
+
+    conexion.query(consulta, [id_usuario, id_libro], (error, resultados) => {
+        if (error) {
+            return res.status(500).json({ mensaje: 'Error al comprobar préstamo' });
+        }
+        res.json({ tienePrestamo: resultados.length > 0});
+    });
+};
+
+
+module.exports = {solicitarPrestamo, historialPrestamos, comprobarPrestamo};
