@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Playfair Display";
-    src: url(/frontend/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+    src: url(/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url(/frontend/assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+    src: url(/assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
