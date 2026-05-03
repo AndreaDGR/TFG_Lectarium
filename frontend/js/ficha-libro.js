@@ -6,7 +6,7 @@ let rutaArchivo = '';
 // Cargar los datos del libro
 async function cargarLibro() {
     try {
-        const respuesta = await fetch(`http://localhost:3000/api/libros/${idLibro}`);
+        const respuesta = await fetch(`${API_URL}/api/libros/${idLibro}`);
         const libro = await respuesta.json();
 
         rutaArchivo = libro[0].ruta_archivo;
@@ -51,7 +51,7 @@ document.getElementById('btn-prestamo').addEventListener('click', async () => {
     }
 
     try {
-        const respuesta = await fetch('http://localhost:3000/api/prestamos', {
+        const respuesta = await fetch(`${API_URL}/api/prestamos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ document.getElementById('btn-favorito').addEventListener('click', async () => {
     }
 
     try {
-        const respuesta = await fetch('http://localhost:3000/api/favoritos', {
+        const respuesta = await fetch(`${API_URL}/api/favoritos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ async function comprobarPrestamo(idLibro) {
     if (!token) return;
 
     try {
-        const respuesta = await fetch(`http://localhost:3000/api/prestamos/comprobar/${idLibro}`, {
+        const respuesta = await fetch(`${API_URL}/api/prestamos/comprobar/${idLibro}`, {
             headers: {'authorization': token}
         });
 
