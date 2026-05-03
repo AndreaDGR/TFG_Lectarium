@@ -69,7 +69,7 @@ const historialPrestamos = (req, res) => {
 // El usuario puede leer el libro si solicita el préstamo
 const comprobarPrestamo = (req, res) => {
     const id_usuario = req.usuario.id;
-    const { id_libro } = res.param;
+    const { id_libro } = req.params;
 
     const consulta = `
         SELECT * FROM prestamos

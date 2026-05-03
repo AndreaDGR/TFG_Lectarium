@@ -110,7 +110,7 @@ async function comprobarPrestamo(idLibro) {
     if (!token) return;
 
     try {
-        const respuesta = await fetch(`http://localhost:3000/api/prestamos/comprobar/%{idLibro}`, {
+        const respuesta = await fetch(`http://localhost:3000/api/prestamos/comprobar/${idLibro}`, {
             headers: {'authorization': token}
         });
 
@@ -132,8 +132,8 @@ async function comprobarPrestamo(idLibro) {
 }
 
 // Leer el libro
-document.getElementById('btn-leer').addEventListener('click'), () => {
+document.getElementById('btn-leer').addEventListener('click', () => {
     window.open(rutaArchivo, '_blank');
-}
+});
 
 cargarLibro();

@@ -1,0 +1,78 @@
+.contacto-contenedor {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.contacto-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.contacto-subtitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #8892A4;
+    margin-bottom: 40px;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    background-color: #111827;
+    border: 1px solid #1A2035;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    resize: none;
+}
+
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: #8892A4;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: #A67C00;
+}
+
+.btn-enviar {
+    width: 100px;
+    height: 50px;
+    background-color: #A67C00;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #8a6500;
+}

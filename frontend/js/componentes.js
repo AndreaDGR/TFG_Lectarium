@@ -16,6 +16,16 @@ async function cargarComponentes() {
         btnPerfil.style.setProperty('display', 'inline-block', 'important');
     }
 
+    //Menú hamburguesa
+    const btnHamburguesa = document.getElementById('btn-hamburguesa');
+    const navegacion = document.querySelector('.navegacion');
+
+    if (btnHamburguesa) {
+        btnHamburguesa.addEventListener('click', () => {
+            navegacion.classList.toggle('activo');
+        });
+    }
+
     //Footer
     const footer = await fetch('/frontend/componentes/footer.html');
     const footerHTML = await footer.text();

@@ -110,6 +110,25 @@ header {
     background-color: #8B5E00;
 }
 
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.menu-hamburguesa span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
 /* Footer */
 
 .footer {
@@ -225,6 +244,34 @@ header {
 @media (max-width: 768px) {
     main {
         margin: 15px 50px;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    .navegacion {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #0D1221;
+        padding: 20px;
+        z-index: 100;
+    }
+
+    .navegacion.activo {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .botones-header {
+        display: none;
     }
 
     /*Footer*/
