@@ -18,7 +18,7 @@ document.querySelector('.login-form').addEventListener('submit', async (e) => {
         if (respuesta.ok) {
             localStorage.setItem('token', datos.token);
             localStorage.setItem('usuario', JSON.stringify(datos.usuario));
-            window.location.href = '/frontend/index.html';
+            window.location.href = '/index.html';
         } else {
             alert(datos.mensaje);
         }

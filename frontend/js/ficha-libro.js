@@ -46,7 +46,7 @@ document.getElementById('btn-prestamo').addEventListener('click', async () => {
 
     if (!token) {
         alert('Debes iniciar sesión para solicitar un préstamo');
-        window.location.href = '/frontend/pages/login.html';
+        window.location.href = '/pages/login.html';
         return;
     }
 
@@ -80,7 +80,7 @@ document.getElementById('btn-favorito').addEventListener('click', async () => {
 
     if (!token) {
         alert('Debes iniciar sesión para añadir favoritos');
-        window.location.href = '/frontend/pages/login.html';
+        window.location.href = '/pages/login.html';
         return;
     }
 

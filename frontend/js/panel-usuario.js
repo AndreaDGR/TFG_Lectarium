@@ -1,5 +1,5 @@
 const token = localStorage.getItem('token');
-if (!token) window.location.href = '/frontend/pages/login.html';
+if (!token) window.location.href = '/pages/login.html';
 
 //Navegación del sidebar
 
@@ -22,7 +22,7 @@ document.querySelectorAll('.menu-item[data-seccion]').forEach(item => {
 document.getElementById('btn-cerrar-sesion').addEventListener('click', () => {
     localStorage.removeItem('token');
     localStorage.removeItem('usuario');
-    window.location.href = '/frontend/index.html';
+    window.location.href = '/index.html';
 
 });
 
@@ -80,10 +80,10 @@ async function cargarFavoritos() {
         lista.innerHTML = '';
         favoritos.forEach(f => {
             lista.innerHTML += `
-            <div class="tarjeta-libro" onclick="window.location.href='/frontend/pages/ficha-libro.html?id=${f.id_libro}'">
+            <div class="tarjeta-libro" onclick="window.location.href='/pages/ficha-libro.html?id=${f.id_libro}'">
                 <div class="tarjeta-portada">
                     <img class="img-portada" src="${f.portada_url}"
-                    onerror="this.src='/frontend/assets/img/portada-default.webp'"/>
+                    onerror="this.src='/assets/img/portada-default.webp'"/>
                 </div>
                 <div class="tarjeta-info">
                     <h3 class="tarjeta-titulo">${f.titulo}</h3>

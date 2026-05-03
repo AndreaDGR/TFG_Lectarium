@@ -32,10 +32,10 @@ function renderizarGrid() {
 
     librosPagina.forEach(libro => {
         grid.innerHTML += `
-            <div class="tarjeta-libro" onclick="window.location.href='/frontend/pages/ficha-libro.html?id=${libro.id_libro}'">
+            <div class="tarjeta-libro" onclick="window.location.href='/pages/ficha-libro.html?id=${libro.id_libro}'">
                 <div class="tarjeta-portada">
                     <img class="img-portada" src="${libro.portada_url}" alt="Portada ${libro.titulo}"
-                    onerror="this.src='/frontend/assets/img/portada-default.webp'"/>
+                    onerror="this.src='/assets/img/portada-default.webp'"/>
                 </div>
                 <div class="tarjeta-info">
                     <h3 class="tarjeta-titulo">${libro.titulo}</h3>
