@@ -87,6 +87,10 @@ header {
     justify-content: center;
 }
 
+.botones-menu-movil {
+    display: none;
+}
+
 .btn-login {
     border: 1px solid #FFFFFF;
     background-color: transparent;
@@ -261,6 +265,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     main {
         margin: 15px 50px;
     }
@@ -293,6 +301,26 @@ header {
         display: none;
     }
 
+    .botones-menu-movil {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #1a2035;
+    }
+
+    .botones-menu-movil a {
+        text-align: center;
+        font-size: 15px;
+        padding: 12px;
+        border-radius: 8px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color:#FFFFFF;
+    }
+
+    
     /*Footer*/
     .footer-contenido {
         flex-direction: column;

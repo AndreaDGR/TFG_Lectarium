@@ -26,6 +26,16 @@ async function cargarComponentes() {
         });
     }
 
+    const btnLoginMovil = document.getElementById('btn-login-movil');
+    const btnRegistroMovil = document.getElementById('btn-registro-movil');
+    const btnPerfilMovil = document.getElementById('btn-perfil-movil');
+
+    if (token) {
+        if (btnLoginMovil) btnLoginMovil.style.display = 'none';
+        if (btnRegistroMovil) btnRegistroMovil.style.display = 'none';
+        if (btnPerfilMovil) btnPerfilMovil.style.setProperty('display', 'block', 'important');
+    }
+
     //Footer
     const footer = await fetch('/frontend/componentes/footer.html');
     const footerHTML = await footer.text();
